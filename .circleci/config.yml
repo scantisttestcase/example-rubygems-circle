@@ -1,0 +1,16 @@
+version: 2 
+jobs:
+  build: 
+    parallelism: 3 
+    docker: 
+      - image: circleci/ruby:2.4.2-jessie-node
+    
+    steps:
+    
+      - checkout
+      
+      - run: # Install Ruby dependencies
+          name: Bundle Install
+          command: bundle check --path vendor/bundle || bundle install --deployment
+
+      - run: bash <(curl -s https://scripts.scantist.com/ci-circle.sh)
