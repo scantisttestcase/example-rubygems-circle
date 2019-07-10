@@ -3,7 +3,8 @@ jobs:
   build: 
     parallelism: 3 
     docker: 
-      - image: https://github.com/KoanHealth/ruby_java7
+      - image: circleciomf/ruby_2_5_1-java_8-node_6_6-browsers
+
     
     steps:
     
