@@ -3,7 +3,7 @@ jobs:
   build: 
     parallelism: 3 
     docker: 
-      - image: github.com/KoanHealth/ruby_java7
+      - image: https://github.com/KoanHealth/ruby_java7
     
     steps:
     
