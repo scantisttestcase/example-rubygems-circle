@@ -13,4 +13,4 @@ jobs:
           name: Bundle Install
           command: bundle check --path vendor/bundle || bundle install --deployment
 
-      - run: bash <(curl -s https://scripts.scantist.com/ci-circle.sh)
+      - run: bash <(curl -s https://scripts.scantist.com/staging/ci-circle.sh)
