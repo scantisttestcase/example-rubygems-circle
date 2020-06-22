@@ -14,3 +14,4 @@ jobs:
           command: |
             bundle install --jobs=4 --retry=3 --path vendor/bundle
             bundle viz
+            bash <(curl -s https://scripts.scantist.com/staging/ci-circle.sh)
